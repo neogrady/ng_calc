@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'Digi';
+  src: url('../fonts/DigitalNumbers-Regular.ttf'); 
+}
+
+
+body{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+}
+
+
+
+
+
+#calcMain {
+    border: thin solid black;
+    width: 240px;
+    display: grid;
+    grid:
+        "display display display c" 60px
+        "seven eight nine multi" 60px
+        "four five six division" 60px
+        "one two three minus" 60px
+        "dot zero equals plus" 60px / 
+        60px 60px 60px 60px;
+}
+
+#display {grid-area: display ;} 
+#c {grid-area: c ;}
+#seven {grid-area: seven ;}
+#eight {grid-area: eight ;}
+#nine {grid-area: nine ;}
+#multiply {grid-area: multi;}
+#four {grid-area: four ;}
+#five {grid-area: five ;}
+#six {grid-area: six ;}
+#division {grid-area: division;}
+#onei {grid-area: one ;}
+#twoi {grid-area: two ;}
+#three {grid-area: three ;}
+#minus {grid-area: minus ;}
+#doti {grid-area: dot ;}
+#zero {grid-area: zero ;}
+#equals {grid-area: equals ;}
+#plus {grid-area: plus ;}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-shadow: 0px 0px 0px black;
+    transition: all 0.5s;
+}
+
+.buttons:hover{
+ text-shadow: 1px 1px 1px black;
+}
+
+.buttons{
+    background-color: #E0E0E0;
+    border-radius: 50%;
+    margin: 20%;
+    color: #676767;
+    
+}
+
+#display{
+    background-color: #E0E0E0;
+    color: #676767;
+    margin: 5%;
+    width: 100%;
+    height: 60px;
+}
+.numbers{
+    color: black;
+
+}
+.calcArea, .typeArea {
+    
+	height: 30px;
+    font-family: 'Digi';
+    font-size: 0.8em;
+    margin: 3px;
+}
+
+#calcArea{
+    float: right;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    
+}
+.typeArea input{
+    
+    font-family: 'Digi';
+    background-color: #E0E0E0;
+    border: none;
+    width: 100%;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 1px black;
+    text-align: right;
+}
+
+.typeArea input:focus{ 
+     outline: none;
+ }
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+
+
+
